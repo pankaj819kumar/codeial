@@ -1,6 +1,6 @@
 const User = require('../models/user');
 module.exports.profile = function (req, res) {
-    return res.render('profile', {
+    return res.render('user_profile', {
         title: "Pankaj Kumar"
     });
 }
@@ -45,5 +45,5 @@ module.exports.create = function (req, res) {
 
 // sign in and create a session for the user
 module.exports.createSession = function (req, res) {
-    
+    return res.redirect('/');
 }
